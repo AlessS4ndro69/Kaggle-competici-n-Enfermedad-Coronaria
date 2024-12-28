@@ -8,16 +8,16 @@ Este proyecto tiene como objetivo desarrollar un modelo de aprendizaje automáti
 
 ## 1. Introducción
 
-La predicción temprana de enfermedades coronarias puede salvar vidas al permitir una intervención médica oportuna. Este proyecto busca construir un modelo de clasificación que utilice datos clínicos para identificar a pacientes en riesgo.
+Las enfermedades coronarias, incluyendo la enfermedad de las arterias coronarias y el infarto de miocardio, representan una de las principales causas de muerte a nivel mundial. Predecir de manera temprana estos problemas cardíacos puede salvar vidas, y el uso de datos accesibles sobre el historial de salud de una persona y su estilo de vida puede hacer que estas predicciones sean más viables y escalables en la práctica clínica.. Este proyecto busca construir un modelo de clasificación que utilice datos clínicos para identificar a pacientes en riesgo.
 
 ---
 
 ## 2. Recopilación de Datos
 
 ### Fuentes de Datos
-- **Dataset utilizado:** [Inserta el nombre del dataset]
-- **Número de observaciones:** [Cantidad de filas en el dataset]
-- **Número de características:** [Cantidad de columnas en el dataset]
+- **Dataset utilizado:** [Behavioral Risk Factor Surveillance System (BRFSS) de 2022]
+- **Número de observaciones:** [480 000 registros]
+- **Número de características:** [27]
 
 ### Exploración Inicial
 Se realizó un análisis exploratorio para comprender la distribución de las variables, detectar valores nulos y determinar la necesidad de transformaciones.
