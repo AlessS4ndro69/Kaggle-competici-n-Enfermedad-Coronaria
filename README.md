@@ -95,13 +95,13 @@ Se utilizó la métrica **F1-score** para medir el desempeño del modelo.
 - **F1-score:** 0.9583
 - **AUC-ROC:** 0.8478
 
-![Curva ROC](#) <!-- Coloca aquí una curva ROC -->
+<!-- ![Curva ROC](#)  Coloca aquí una curva ROC -->
 
 ---
 
 ## 6. Evaluación del Modelo
 
-El modelo fue evaluado en el conjunto de validación. Los resultados demuestran su capacidad para identificar casos de riesgo con un balance adecuado entre precisión y recall.
+Se evalua la generalización del modelo(overfiting y underfiting). Se muestra el mismo comportamiento de la perdida del error en el entrenamiento y validación.
 
 ![](plots/analisisdelacaidaddelerror.png) <!-- Coloca aquí una imagen de resultados -->
 
