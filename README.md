@@ -106,14 +106,14 @@ Se evalua la generalización del modelo(overfiting y underfiting). Se muestra el
 ![](plots/analisisdelacaidaddelerror.png) <!-- Coloca aquí una imagen de resultados -->
 
 ---
-
+<!--
 ## 7. Implementación
 
 Se desplegó el modelo en un entorno productivo mediante [inserta plataforma, e.g., Flask, AWS Lambda]. El modelo está preparado para recibir datos en tiempo real y devolver predicciones.
 
 ---
-
-## 8. Conclusiones
+-->
+## 7. Conclusiones
 
 El modelo desarrollado muestra un alto potencial para apoyar a los profesionales médicos en la identificación temprana de enfermedades coronarias. Las próximas iteraciones del proyecto incluirán:
 - Uso de datos adicionales para mejorar el desempeño.
