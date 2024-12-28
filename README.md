@@ -15,9 +15,9 @@ Las enfermedades coronarias, incluyendo la enfermedad de las arterias coronarias
 ## 2. Recopilación de Datos
 
 ### Fuentes de Datos
-- **Dataset utilizado:** [Behavioral Risk Factor Surveillance System (BRFSS) de 2022]
-- **Número de observaciones:** [480 000 registros]
-- **Número de características:** [27]
+- **Dataset utilizado:** Behavioral Risk Factor Surveillance System (BRFSS) de 2022
+- **Número de observaciones:** 480 000 registros
+- **Número de características:** 27
 
 ### Exploración Inicial
 Se realizó un análisis exploratorio para comprender la distribución de las variables, detectar valores nulos y determinar la necesidad de transformaciones.
