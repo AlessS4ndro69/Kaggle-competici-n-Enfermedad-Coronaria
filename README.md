@@ -22,21 +22,52 @@ Las enfermedades coronarias, incluyendo la enfermedad de las arterias coronarias
 ### Exploración Inicial
 Se realizó un análisis exploratorio para comprender la distribución de las variables, detectar valores nulos y determinar la necesidad de transformaciones.
 
-![Exploración de Datos](#) <!-- Coloca aquí una imagen o gráfico -->
+- **Distribución de las características**
+![](plots/distribuciondelascaracteristicas.png) <!-- Coloca aquí una imagen o gráfico -->
 
+- **Diagnosticos positivos y negativos**
+
+![Alto Desbalance en los diagnosticos](plots/desbalanceentrepositivosynegativos.png)
+
+- **Correlación entre diagnostico y edad**
+
+![A mayor edad mayor riesgo de sufrir infarto](plots/relacionedadydiagnostico.png)
+
+- **Matriz de correlación**
+
+![Heatmap de las principales características](plots/matrizcorrelaciondecaracteristicas.png)
 ---
+
+-**Observaciones del análisis exploratorio:**
+La variable objetivo es CHD_OR_MI.
+
+Existen 92% de registros positivos lo cual genera un desbalance con los registros negativos. 
+
+Se utilizará validación cruzada por el alto desbalance de diagnosticos.
+
+Existen 25 000 registros de personas de 80 años, lo cual es mas del 200% mas que otros registros.
+
+Los registros son en su mayoria binarios y ternarios.
+
+En el primer cuartil existe el mayor rango de poblacion de 18 a 40.
+
+La edad es un factor importante, se concluye que a mayor edad mayor probabilidad de sufrir enfermedad.
+
+Gran cantidad de valores NAN, se realizara una imputación de los datos de acuerdo a la correlación que tengan entre caracteristicas, los métodos para la imputacion de datos 
+elegidos son, regresion logistica para las variables categoricas que tienen mucha relacion con otras variables, regresion lineal para IBM, y la moda para FRUITS y VEGETABLES.
+
+Debido a la calidad de los datos, se utilizará una red CatBoosClassifier.
 
 ## 3. Preprocesamiento de Datos
 
 ### Limpieza de Datos
-- Eliminación de valores nulos.
+- Imputación de valores nulos.
 - Tratamiento de valores atípicos.
 - Normalización de variables numéricas.
 
 ### Codificación
-- Variables categóricas transformadas mediante [método de codificación, e.g., one-hot encoding].
+- Variables categóricas transformadas mediante one-hot-encoding.
 
-![Limpieza de Datos](#) <!-- Coloca aquí una imagen o gráfico -->
 
 ### División del Dataset
 El dataset fue dividido en:
@@ -48,25 +79,21 @@ El dataset fue dividido en:
 ## 4. Selección del Modelo
 
 Se evaluaron diferentes algoritmos para determinar el más adecuado:
-- **Regresión Logística.**
-- **Bosques Aleatorios.**
-- **Gradient Boosting (e.g., XGBoost).**
+- **CatBoosClassifier.**
+
 
 ### Métrica de Evaluación
-Se utilizó la métrica **AUC-ROC** para medir el desempeño del modelo.
-
-![Comparación de Modelos](#) <!-- Coloca aquí un gráfico comparativo -->
+Se utilizó la métrica **F1-score** para medir el desempeño del modelo.
 
 ---
 
 ## 5. Entrenamiento del Modelo
 
-El modelo seleccionado se entrenó utilizando los datos procesados. Se realizaron ajustes de hiperparámetros mediante búsqueda en cuadrícula (*grid search*) para optimizar el desempeño.
 
 ### Resultados del Entrenamiento
-- **Precisión:** [Valor obtenido]
-- **Recall:** [Valor obtenido]
-- **AUC-ROC:** [Valor obtenido]
+
+- **F1-score:** 0.9583
+- **AUC-ROC:** 0.8478
 
 ![Curva ROC](#) <!-- Coloca aquí una curva ROC -->
 
@@ -76,7 +103,7 @@ El modelo seleccionado se entrenó utilizando los datos procesados. Se realizaro
 
 El modelo fue evaluado en el conjunto de validación. Los resultados demuestran su capacidad para identificar casos de riesgo con un balance adecuado entre precisión y recall.
 
-![Resultados de Evaluación](#) <!-- Coloca aquí una imagen de resultados -->
+![](plots/analisisdelacaidaddelerror.png) <!-- Coloca aquí una imagen de resultados -->
 
 ---
 
@@ -94,6 +121,7 @@ El modelo desarrollado muestra un alto potencial para apoyar a los profesionales
 
 ---
 
+<!--
 ## 9. Referencias
 
 - [Inserta aquí referencias relevantes]
@@ -107,3 +135,4 @@ Incluye aquí cualquier información adicional que pueda ser relevante.
 ---
 
 *¡Completa los espacios con imágenes, gráficos y resultados obtenidos!*
+-->
